@@ -19,6 +19,10 @@ const maindata=async()=>{
 maindata.data.map(data=>{
 document.getElementById("main").innerHTML=`
         <p>${data.title}</p>
+        <p>${data.description}</p>
+        <p>${data.status}</p>
+        <button onclick="editTask(${data._id})">Edit</button>
+        <button onclick="deleteTask(${data._id})">Delete</button>
 
 `
 })
