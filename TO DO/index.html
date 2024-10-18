@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+</head>
+<body>
+    <h1>To-do List</h1>
+    <form id="form">
+
+        <label for="input">Add a task:</label>
+        <input type="text" id="task" placeholder="Enter a task">
+
+        <label for="discription">Discription:</label>
+        <input type="text" id="description" placeholder="Enter a discription">
+
+        <select id="status">
+            <option value="" selected disabled >select</option>
+            <option value="pending">Pending</option>
+            <option value="progress">Progress</option>
+            <option value="complete">Complete</option> 
+        </select>
+
+        <button type="submit">Submit</button>
+
+
+
+    </form>
+    <div id="main">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
