@@ -1,35 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo list</title>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <h1>To-do List</h1>
-    <form id="form">
+    <div class="container">
+        <h1>🌟 My Awesome To-Do List 🌟</h1>
+        <form id="form" class="todo-form">
+            <div class="input-group">
+                <label for="task">📝 Add a Task:</label>
+                <input type="text" id="task" placeholder="Enter a task" required>
+            </div>
 
-        <label for="input">Add a task:</label>
-        <input type="text" id="task" placeholder="Enter a task">
+            <div class="input-group">
+                <label for="description">📋 Description:</label>
+                <input type="text" id="description" placeholder="Enter a description" required>
+            </div>
 
-        <label for="discription">Discription:</label>
-        <input type="text" id="description" placeholder="Enter a discription">
+            <div class="input-group">
+                <label for="status">📊 Status:</label>
+                <select id="status" required>
+                    <option value="" selected disabled>Select</option>
+                    <option value="pending">Pending</option>
+                    <option value="progress">In Progress</option>
+                    <option value="complete">Complete</option>
+                </select>
+            </div>
 
-        <select id="status">
-            <option value="" selected disabled >select</option>
-            <option value="pending">Pending</option>
-            <option value="progress">Progress</option>
-            <option value="complete">Complete</option> 
-        </select>
+            <button type="submit" class="submit-btn">➕ Add Task</button>
+        </form>
 
-        <button type="submit">Submit</button>
-
-
-
-    </form>
-    <div id="main">
+       
+        </div>
     </div>
+
+    <div id="main" class="task-list">
+        
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./script.js"></script>
 </body>
+
 </html>
